@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import ContactList from './ContactList/ContactList.jsx';
@@ -65,7 +66,8 @@ export function App() {
   }, [contacts]);
 
   const handleChangeFilter = value => {
-    console.log(value);
+    setFilter(value);
+    console.log(filter);
   };
 
   const deleteContact = id => {

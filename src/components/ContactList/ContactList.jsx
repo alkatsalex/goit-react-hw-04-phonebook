@@ -2,7 +2,6 @@ import ContactItem from 'components/ContactItem/ContactItem.jsx';
 import css from './ContactList.module.css';
 
 export default function ContactList({ contactsArr, deleteContact }) {
-  console.log(contactsArr);
   return (
     <div>
       <h2 className={css.title}>Contacts:</h2>
